@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@400;600;700&family=Satisfy&display=swap');
+:root{
+    --satisfy: 'Satisfy', cursive;
+    --rale: 'Raleway', sans-seri;
+    --lobstar-two: 'Lobster Two', cursive;
+    --kurale: 'Kurale', serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+/*====================
+ common css ends 
+ ====================*/
+ .satisfy-reg{
+    font-family: var(--satisfy);
+    font-weight: 400;
+}
+.rale-reg{
+    font-family: var(--rale);
+    font-weight: 700;
+}
+.rale-sb{
+    font-family: var(--rale);
+    font-weight: 600;
+}
+.rale-b{
+    font-family: var(--rale);
+    font-weight: 700;
+}
+.lob-reg{
+    font-family: var(--lobstar-two);
+    font-weight: 400;
+}
+.lob-bold{
+    font-family: var(--lobstar-two);
+    font-weight: 700;
+}
+.kurale-reg{
+    font-family: var(--kurale);
+    font-weight: 400;
+}
+/*====================
+ font familly css ends 
+ ====================*/
+.navbar{
+    background: #684aee;
+    height: 100px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.brand{
+    width: 200px;
+    height: 100px;
+}
+.brand a span{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 53px;
+    background: linear-gradient(#d433e9, #34d5e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 100px;
+}
+.menu-list{
+    width: 700px;
+}
+.menu-list ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list ul li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 100px;
+    position: relative;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.menu-list ul li a:hover{
+    background: linear-gradient(#d433e9, #34d5e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.menu-list ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: linear-gradient(#d433e9, #34d5e0);
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.menu-list ul li a:hover::after{
+    width: 100%;
+    bottom: 0;
+}
+/*====================
+ navbar css ends 
+ ====================*/
+.my-img{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/m-img.jpg) no-repeat center /cover;
+    position: relative;
+    z-index: -1;
+}
+.my-img::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.img-text{
+    z-index: 9999;
+}
+.time-box{
+    width: 400px;
+    padding-top: 300px;
+}
+.time-box h2{
+    font-family: var(--rale);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(#d433e9, #34d5e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 36px;
+}
+.year{
+    text-align: center;
+    margin: 5px 0px 15px;
+}
+.year h3{
+    background: linear-gradient(#d433e9, #34d5e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 55px;
+}
+.count-down{
+    display: flex;
+    justify-content: space-between;
+}
+#time{
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+#time h3{
+    text-transform: capitalize;
+    font-size: 25px;
+    background: linear-gradient(#d433e9, #34d5e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#time p{
+    font-family: var(--lobstar-two);
+    font-weight: 400;
+    text-transform: capitalize;
+    background: linear-gradient(#d433e9, #34d5e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/*====================
+ banner css ends 
+ ====================*/
